@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,#13005A,white,#13005A);
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+        #h1{
+            text-align: center;
+        }
+        #items{
+            margin-left: 35%;
+        }
+        #items input{
+            opacity: 0.4;
+        }
+        data:hover::after{
+            content:'('attr(value)')'
+        }
+        #video{
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="h1">
+        <h2>WATER PURIFIER</h2>
+        <h3> THINK, You Can’t do anything without water. Save it.</h3>
+    </div>
+    <div id="items">
+        Name: <input type="text" spellcheck="true"><br><br>
+        <address> Address: No: 1 ABC street <br>OMR <br> Chennai</address>
+        <h2>Types</h2>
+        <ol>
+            <li><data value="RO technology">Type 1</data></li>
+            <li ><data value="UV technology">Type 2</data></li>
+            <li><data value="UF technology">Type 3</data></li>
+        </ol>
+    </div><br><br>
+    <div id="video">
+        <video id="sample" width="44%" controls="controls">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <Audio controls autoplay>
+            <source src="audio.mp3" type="audio/mp3">
+        </Audio>
+    </div>
+</body>
+</html>
